@@ -1,25 +1,32 @@
 def foldername(extension):
+# lista di estensioni che diventano sottocartelle
     if(extension == ""):
         return None
     else:
         switcher = {
             "exe"  : "Software", 
-            "txt"  : "Notes-Text", 
+            "txt"  : "Note-Testo",
+            "csv"  : "Dati grezzi",
+            "dat"  : "Dati grezzi",
             "pdf"  : "PDFs", 
             "c"    : "C programs", 
-            "py"   : "Python files",
+            "py"   : "Python",
             "java" : "Java programs",
             "class": "Java programs", 
             "cpp"  : "Cpp programs", 
-            "jpg"  : "Images", 
-            "png"  : "Images",  
-            "jpeg" : "Images", 
-            "raw"  : "Images",
-            "mp3"  : "Music", 
-            "mp4"  : "Videos", 
-            "mkv"  : "Videos",
-            "xlsx" : "Excel files",
-            "ppt"  : "Ppt files",
-            "doc"  : "Documents"
+            "jpg"  : "Immagini", 
+            "png"  : "Immagini",  
+            "jpeg" : "Immagini", 
+            "raw"  : "Immagini",
+            "mp3"  : "Musica", 
+            "mp4"  : "Video", 
+            "mkv"  : "Video",
+            "xlsx" : "Fogli di calcolo",
+            "xls"  : "Fogli di calcolo",
+            "ods"  : "Fogli di calcolo",
+            "ppt"  : "Presentazioni",
+            "pptx" : "Presentazioni",
+            "doc"  : "Documenti",
+            "docx" : "Documenti"
         }
-        return switcher.get(extension, "Extras") #returns "Extras" if not in dictionary
+        return switcher.get(extension, "Miscellanea") #returns "Miscellanea" if not in dictionary

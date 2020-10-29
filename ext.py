@@ -27,6 +27,7 @@ def foldername(extension):
             "ppt"  : "Presentazioni",
             "pptx" : "Presentazioni",
             "doc"  : "Documenti",
-            "docx" : "Documenti"
+            "docx" : "Documenti",
+            "zip"  : "Compressi"
         }
         return switcher.get(extension, "Miscellanea") #returns "Miscellanea" if not in dictionary
